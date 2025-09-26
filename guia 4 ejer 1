@@ -1,0 +1,16 @@
+# ejercicio1
+# Cargar n notas en un vector, mostrar la nota más alta y el promedio
+
+n = int(input("Ingrese la cantidad de notas: "))
+notas = []
+
+for i in range(n):
+    nota = float(input(f"Ingrese la nota {i+1}: "))
+    notas.append(nota)
+
+mayor = max(notas)
+promedio = sum(notas) / n
+
+print(f"\nNotas ingresadas: {notas}")
+print(f"Nota más alta: {mayor}")
+print(f"Promedio: {promedio:.2f}")
