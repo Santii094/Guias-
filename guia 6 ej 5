@@ -1,0 +1,9 @@
+# ejercicio5
+def ordenar(a, b):
+    return (a, b) if a < b else (b, a)
+
+# Programa principal
+a = int(input("Ingrese el primer número: "))
+b = int(input("Ingrese el segundo número: "))
+menor, mayor = ordenar(a, b)
+print(f"Números ordenados: {menor}, {mayor}")
