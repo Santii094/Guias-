@@ -1,6 +1,4 @@
 # ejercicio3
-# Calcular monto total de compra de 3 productos con descuento si supera $100
-
 print("=== Compra de productos ===")
 total = 0
 
