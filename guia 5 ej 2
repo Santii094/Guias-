@@ -1,0 +1,10 @@
+# ejercicio2
+# Crear una matriz 4x4 con diagonal secundaria en 1 y resto 0
+
+matriz = [[0 for _ in range(4)] for _ in range(4)]
+
+for i in range(4):
+    matriz[i][3 - i] = 1  # Diagonal secundaria
+
+for fila in matriz:
+    print(fila)
