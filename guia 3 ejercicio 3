@@ -1,0 +1,5 @@
+# ejercicio3
+# Mostrar los números del 200 al 250 saltando de 2 en 2
+
+for i in range(200, 251, 2):
+    print(i)
