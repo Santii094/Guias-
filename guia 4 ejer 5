@@ -1,0 +1,21 @@
+# ejercicio5
+# Vector de vendedores y ventas. Reportar mayor y menor venta en dólares y pesos
+
+vendedores = []
+ventas = []
+
+for i in range(15):
+    nombre = input(f"Ingrese el nombre del vendedor {i+1}: ")
+    monto = float(input(f"Ingrese la venta en dólares de {nombre}: "))
+    vendedores.append(nombre)
+    ventas.append(monto)
+
+mayor = max(ventas)
+menor = min(ventas)
+
+idx_mayor = ventas.index(mayor)
+idx_menor = ventas.index(menor)
+
+print("\n=== Informe de Ventas ===")
+print(f"Mayor venta: {vendedores[idx_mayor]} con ${mayor} USD | ${mayor*140} ARS")
+print(f"Menor venta: {vendedores[idx_menor]} con ${menor} USD | ${menor*140} ARS")
