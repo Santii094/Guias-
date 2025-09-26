@@ -1,0 +1,16 @@
+# ejercicio5
+# Notas de 4 alumnos (3 notas cada uno) y promedio en la última columna
+
+matriz = [[0 for _ in range(4)] for _ in range(4)]
+
+# Cargar notas de los alumnos
+for i in range(4):
+    print(f"\nAlumno {i+1}:")
+    for j in range(3):
+        matriz[i][j] = int(input(f"Ingrese nota {j+1}: "))
+    matriz[i][3] = sum(matriz[i][:3]) / 3  # Promedio
+
+# Mostrar resultados
+print("\nNotas y promedios:")
+for i in range(4):
+    print(f"Alumno {i+1}: Notas={matriz[i][:3]} | Promedio={matriz[i][3]:.2f}")
