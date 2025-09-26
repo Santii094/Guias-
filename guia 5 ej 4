@@ -1,0 +1,20 @@
+# ejercicio4
+# Matriz 50x15 con ventas de artículos por vendedores
+
+import random
+
+# Matriz CANT: 50 artículos x 15 vendedores
+CANT = [[random.randint(0, 20) for _ in range(15)] for _ in range(50)]
+
+# Vector TOTAL: suma por cada vendedor (columna)
+TOTAL = [0] * 15
+for j in range(15):
+    for i in range(50):
+        TOTAL[j] += CANT[i][j]
+
+# Vendedor con mayor venta
+mayor = max(TOTAL)
+vendedor = TOTAL.index(mayor) + 1
+
+print("Ventas totales por vendedor:", TOTAL)
+print(f"El vendedor con mayor venta es el Nº {vendedor} con {mayor} ventas.")
