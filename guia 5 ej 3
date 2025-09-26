@@ -1,0 +1,11 @@
+# ejercicio3
+# Calcular el promedio de cada alumno (40 alumnos con 5 notas cada uno)
+
+import random
+
+# Generar matriz de 40x5 con notas aleatorias de 1 a 10
+notas = [[random.randint(1, 10) for _ in range(5)] for _ in range(40)]
+
+for i, fila in enumerate(notas, start=1):
+    promedio = sum(fila) / len(fila)
+    print(f"Alumno {i}: Notas={fila} | Promedio={promedio:.2f}")
