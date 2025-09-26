@@ -1,0 +1,20 @@
+# ejercicio6
+# Vector de cantidades y costos, calcular precios totales y mostrar los que superen $1000
+
+n = int(input("Ingrese la cantidad de productos: "))
+
+cantidades = []
+costos = []
+
+for i in range(n):
+    cantidad = int(input(f"Ingrese la cantidad del producto {i+1}: "))
+    costo = float(input(f"Ingrese el costo unitario del producto {i+1}: "))
+    cantidades.append(cantidad)
+    costos.append(costo)
+
+print("\n=== Informe de productos ===")
+for i in range(n):
+    total = cantidades[i] * costos[i]
+    print(f"Producto {i+1}: Cantidad={cantidades[i]}, Costo={costos[i]}, Total={total}")
+    if total > 1000:
+        print(" -> Supera los $1000")
