@@ -1,0 +1,12 @@
+# ejercicio2
+# Control de compras en mercería mayorista
+
+print("=== Venta mercería ===")
+cantidad = int(input("Ingrese la cantidad de paquetes: "))
+
+if cantidad < 5:
+    print("No se permiten compras inferiores a 5 productos.")
+elif cantidad <= 15:
+    print("El costo de envío es de $200.")
+else:
+    print("El envío es gratuito.")
