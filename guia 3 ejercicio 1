@@ -1,0 +1,5 @@
+# ejercicio1
+# Mostrar los números del 1 al 35 uno debajo del otro
+
+for i in range(1, 36):
+    print(i)
