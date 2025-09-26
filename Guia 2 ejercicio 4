@@ -1,6 +1,4 @@
 # ejercicio4
-# Calcular sueldo neto de empleado según categoría
-
 print("=== Sueldo Empresa ===")
 dni = input("Ingrese el DNI del empleado: ")
 print("Categorías: 0-Maestranza | 1-Administración | 2-Gerencia")
