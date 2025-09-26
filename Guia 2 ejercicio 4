@@ -1,0 +1,40 @@
+# ejercicio4
+# Calcular sueldo neto de empleado según categoría
+
+print("=== Sueldo Empresa ===")
+dni = input("Ingrese el DNI del empleado: ")
+print("Categorías: 0-Maestranza | 1-Administración | 2-Gerencia")
+categoria = int(input("Ingrese la categoría (0-2): "))
+
+if categoria == 0:
+    nombre = "Maestranza"
+    sueldo_bruto = 23600
+    desc_jubilacion = sueldo_bruto * 0.11
+    desc_obra = sueldo_bruto * 0.03
+    desc_club = 0
+elif categoria == 1:
+    nombre = "Administración"
+    sueldo_bruto = 35800
+    desc_jubilacion = sueldo_bruto * 0.11
+    desc_obra = sueldo_bruto * 0.05
+    desc_club = 0
+elif categoria == 2:
+    nombre = "Gerencia"
+    sueldo_bruto = 60420
+    desc_jubilacion = sueldo_bruto * 0.11
+    desc_obra = sueldo_bruto * 0.05
+    desc_club = sueldo_bruto * 0.04
+else:
+    print("Categoría inválida")
+    exit()
+
+sueldo_neto = sueldo_bruto - (desc_jubilacion + desc_obra + desc_club)
+
+print(f"\nEmpleado DNI: {dni}")
+print(f"Categoría: {nombre}")
+print(f"Sueldo Bruto: ${sueldo_bruto:.2f}")
+print(f"Descuento Jubilación: ${desc_jubilacion:.2f}")
+print(f"Descuento Obra Social: ${desc_obra:.2f}")
+if desc_club > 0:
+    print(f"Descuento Club: ${desc_club:.2f}")
+print(f"Sueldo Neto: ${sueldo_neto:.2f}")
