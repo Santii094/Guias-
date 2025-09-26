@@ -1,0 +1,15 @@
+# ejercicio4
+# Cargar edades de 20 personas y mostrar promedio y menor edad
+
+edades = []
+
+for i in range(20):
+    edad = int(input(f"Ingrese la edad de la persona {i+1}: "))
+    edades.append(edad)
+
+promedio = sum(edades) / 20
+menor = min(edades)
+
+print(f"\nEdades: {edades}")
+print(f"Promedio de edad: {promedio:.2f}")
+print(f"La edad más joven es: {menor}")
